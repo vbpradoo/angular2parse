@@ -1,15 +1,16 @@
 {
-  "name": "angular2parse",
-  "version": "1.0.11",
-  "author": "Articode",
+  "name": "vbpradoo_angular2parse",
+  "version": "2.0.0",
+  "author": "Articode / Updated by Vbpradoo",
   "license": "MIT",
+  "private": false,
   "bugs": {
-    "url": "https://github.com/articodeltd/angular2parse/issues"
+    "url": "https://github.com/vbpradoo/angular2parse/issues"
   },
-  "homepage": "https://github.com/articodeltd/angular2parse#readme",
+  "homepage": "https://github.com/vbpradoo/angular2parse#readme",
   "peerDependencies": {
-    "@angular/common": "^10.0.0 || ^11.0.3",
-    "@angular/core": "^10.0.0 || ^11.0.3",
-    "tslib": "^1.10.0"
+    "@angular/common": "^10.0.0 || ^11.0.3 || ^12.0.0 || ^13.0.0",
+    "@angular/core": "^10.0.0 || ^11.0.3 || ^12.0.0 || ^13.0.0",
+    "tslib": "^2.4.0"
   }
 }

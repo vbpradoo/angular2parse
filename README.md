@@ -1,10 +1,13 @@
 # angular2parse
-Parse util for angular expressions:  html string -> angular temaplte 
 
-# install 
+Parse util for angular expressions: html string -> angular temaplte
+Updated package to angular 13
+
+# install
+
 `npm install angular2parse`
 
-```typescript 
+```typescript
 // app.module.ts
 @NgModule({
   imports: [Angular2ParseModule, ...],
@@ -12,14 +15,16 @@ Parse util for angular expressions:  html string -> angular temaplte
 })
 class AppModule {}
 ```
-# usage 
+
+# usage
+
 ```typescript
 import { Parse } from 'angular2parse';
 
 @Injectable()
 class MyService {
   constructor(private parser: Parse) {}
-  
+
   parseAngularString() {
     const expression = `{
 	positions: track.positions,
@@ -28,7 +33,7 @@ class MyService {
 	width : 200000.0 }`;
 
    const expressionEvalFn = this.parser.eval(expression)
-  
+
    const context = {
       getCornerType: () => 'value',
       track: {
@@ -37,12 +42,14 @@ class MyService {
         }
       }
    };
-    
+
    const result = expressionEvalFn(context);
    console.log(result);
    // {positions: [1,2,3], cornerType: 'value', material: 'red', width: 2000}
-  
+
 }
+
+```
 
 ```
 
